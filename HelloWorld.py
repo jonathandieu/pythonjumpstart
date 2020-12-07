@@ -25,4 +25,13 @@ Jon = person("Jonathan","Black")
 Jon.display()
 Jon.eat()
 num = 12
-print (float(num))
+hmm = range(10)
+
+for x in range(1,3):
+    print("count")
+
+
+# print (float(num))
+# print (hmm)
+# for int in hmm:
+#     print("pls make it stop")
