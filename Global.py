@@ -6,3 +6,4 @@ def change():
 if __name__ == '__main__': # This statement prevents the script from running every time we import
     variable1 = "initial value"
     change()
+    #slight change
