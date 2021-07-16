@@ -5,7 +5,8 @@ print("Hello world!")
 
 class Test(object):
     """
-    This must be for documentation
+    This must be for documentation: it's a docstring
+    it works in multiple lines too
     """
     weight = 0
     difficulty = 0
@@ -20,3 +21,20 @@ class Test(object):
 final = Test()
 final.show()
 
+class myClass():
+    """
+    This is a class that does nothing
+    """
+    x = 4
+    def myMethod(self):
+        print("this")
+
+class myOtherClass(myClass):
+    """
+    This is a class that does nothing
+    """
+    def myMethod(self):
+        print("that")
+
+x = myOtherClass()
+x.myMethod()
