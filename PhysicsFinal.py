@@ -6,6 +6,19 @@ def final_3b(B, W, N, R, T):
     answer = abs((N * B * A * W) * math.sin(W*T))
     print("question 3b:", answer)
 
+def final_6c(q1, q2, d):
+    answer = d / (1 + math.sqrt(q2/q1))
+    print("question 6c:", answer)
+
+def final_7c(q, m, z, r):
+    answer = ((m * 9.8 * 2 * 8.85e-12 * (r**2 + z**2)**(3/2)) / (r * z * q)) * 10000000
+
+    print("question 7c:", answer)
+
+def final_10c():
+    mu_0 = 1.26e-6
+
+    answer = (1/2) * (mu_0 / (4 * math.pi))
 
 def question_seven(i1, i2, d):
     answer = (.5*i1)/(i1+i2)
@@ -31,10 +44,11 @@ def question_ten(k, r, d):
 
 
 
-print("question 1: Divergence of the magnetic field is zero")
-print("question 2: When calculating the direction of the mf on a moving charge or when calculating the direction of the magnetic field generated from a line of current")
-print("question 3: Magnetic flux is the measure of how many magnetic field lines are passing through a given area enclosed by a loop")
+print("question 1: Vector pointing in the direction of the decrease in potential")
+print("question 2: Kirchoffs law comes from conservation of energy and conservation of charge")
+print("question 3:The divergence of the electric field is non-zero")
 print("question 4: The current produced travels in a direction such that it produces a secondary magnetic field/flux which opposes the original change in the magnetic flux")
 print("question 5: The current is maximal at the frequency where the capacitive reactance is equal to the inductive reactance")
-
-final_3b(.23, 12.7, 64, .83, 13.3)
+# print("question 6: The voltage across the capacitor is equal to the current times the capacitive reactance")
+final_6c(13.6, 5.2, 1.33)
+final_7c(1.9, 12.2, 45.2, 13.7)
